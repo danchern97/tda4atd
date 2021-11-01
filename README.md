@@ -3,7 +3,7 @@ This repo provides the source code of our paper:
 
 @article{EMNLP2021,
   title={Artificial Text Detection via Examining the Topology of Attention Maps},
-  author={Kushnareva, Laida and Cheriavskii, Daniil and Mikhailov, Vladislav and Artemova, Ekaterina  and Barannikov, Serguei and  Bernstein, Alexander and Piontkovskaya, Irina and  Piontkovski, Dmitri and Burnaev, Evgeny},
+  author={Kushnareva, Laida and Cherniavskii, Daniil and Mikhailov, Vladislav and Artemova, Ekaterina  and Barannikov, Serguei and  Bernstein, Alexander and Piontkovskaya, Irina and  Piontkovski, Dmitri and Burnaev, Evgeny},
   journal={Proc. of EMNLP conf., oral talk},
   year={2021},
 archivePrefix = "arXiv",
