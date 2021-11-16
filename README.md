@@ -23,7 +23,7 @@ The code base requires:
 * For calculating topological invariants by thresholds (Section 4.1), use `features_calculation_by_thresholds.ipynb`.
 * For calculating barcodes (Section 4.2) and template (Section 4.3) features, use `features_calculation_barcodes_and_templates.ipynb`.
 * For making predictions with the logistic regression upon calculated features, use `features_prediction_gpt_web.ipynb`.
-* The head-wise probing analysis [Jo and Myaeng, 2020](https://aclanthology.org/2020.acl-main.311/) is conducted using [an open-source implementation](https://github.com/heartcored98/transformer_anatomy). 
+* The head-wise probing analysis by [Jo and Myaeng (2020)](https://aclanthology.org/2020.acl-main.311/) is conducted using [an open-source implementation](https://github.com/heartcored98/transformer_anatomy). 
 
 
 # Cite us
