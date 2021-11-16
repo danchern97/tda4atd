@@ -4,6 +4,10 @@ This repository contains code base for the [paper](https://aclanthology.org/2021
 
 Despite the prominent performance of existing ATD method, they still lack interpretability and robustness towards unseen text generation models. To this end, we propose three types of interpretable TDA features for this task, and empirically show that the features derived from the BERT model outperform count- and neural-based baselines up to 10% on three common datasets, and tend to be the most robust towards unseen GPT-style generation models as opposed to existing methods. The probing analysis of the features reveals their sensitivity to the surface and syntactic properties. The results demonstrate that TDA is a promising line with respect to NLP tasks, specifically the ones that incorporate surface and structural information.
 
+We briefly list the features below, and refer the reader to the paper for more details:
+* Topological features (Betti numbers, the number of edges, the number of strong connected components, etc.);
+* Features derived from barcodes (the sum of lengths of bars, the variance of lengths of bars, the time of birth/death of the longest bar, etc.);
+* Features based on distance to patterns (attention to previous token, attention to punctuation marks, attention to CLS-token, etc.).
 
 # Dependencies
 The code base requires:
@@ -30,10 +34,24 @@ The code base requires:
 Our paper is accepted to the EMNLP 2021 main conference and is selected for oral session. 
 
 ```
-@article{kushnareva2021artificial,
-  title={Artificial Text Detection via Examining the Topology of Attention Maps},
-  author={Kushnareva, Laida and Cherniavskii, Daniil and Mikhailov, Vladislav and Artemova, Ekaterina and Barannikov, Serguei and Bernstein, Alexander and Piontkovskaya, Irina and Piontkovski, Dmitri and Burnaev, Evgeny},
-  journal={arXiv preprint arXiv:2109.04825},
-  year={2021}
+@inproceedings{kushnareva-etal-2021-artificial,
+    title = "Artificial Text Detection via Examining the Topology of Attention Maps",
+    author = "Kushnareva, Laida  and
+      Cherniavskii, Daniil  and
+      Mikhailov, Vladislav  and
+      Artemova, Ekaterina  and
+      Barannikov, Serguei  and
+      Bernstein, Alexander  and
+      Piontkovskaya, Irina  and
+      Piontkovski, Dmitri  and
+      Burnaev, Evgeny",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.50",
+    pages = "635--649",
+    abstract = "The impressive capabilities of recent generative models to create texts that are challenging to distinguish from the human-written ones can be misused for generating fake news, product reviews, and even abusive content. Despite the prominent performance of existing methods for artificial text detection, they still lack interpretability and robustness towards unseen models. To this end, we propose three novel types of interpretable topological features for this task based on Topological Data Analysis (TDA) which is currently understudied in the field of NLP. We empirically show that the features derived from the BERT model outperform count- and neural-based baselines up to 10{\%} on three common datasets, and tend to be the most robust towards unseen GPT-style generation models as opposed to existing methods. The probing analysis of the features reveals their sensitivity to the surface and syntactic properties. The results demonstrate that TDA is a promising line with respect to NLP tasks, specifically the ones that incorporate surface and structural information.",
 }
 ```
